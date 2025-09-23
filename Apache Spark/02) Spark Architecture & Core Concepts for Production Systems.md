@@ -2,7 +2,10 @@
 
 ## Building Distributed Data Processing Systems That Scale and Control Costs
 
-**Cover Image Suggestion**: Distributed cluster diagram with driver-executor architecture and cost optimization callouts
+![Spark cluster architecture diagram showing driver coordinating executors across worker nodes](https://miro.medium.com/v2/resize:fit:1400/1*HtkHFPTI1mT-3vzB6buuGg.png)
+
+*Figure: High-level Spark cluster architecture (driver, executors, cluster resources, data storage).*
+
 **Tags**: apache-spark, pyspark, distributed-computing, architecture, production-systems, cost-optimization, performance-tuning, data-engineering
 
 ---

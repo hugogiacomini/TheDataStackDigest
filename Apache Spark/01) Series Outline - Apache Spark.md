@@ -4,7 +4,8 @@ This series is for seasoned data engineers running Spark in the real world. It t
 
 ![Apache Spark multi‑cloud distributed processing and cost optimization](https://www.datamechanics.co/files/5e724862760345325327026c/5fad7ec263dd798562a31a7e_apache%20spark%20ecosystem%20intro%20smaller.png)
 
-<sub>source: https://www.datamechanics.co/files/5e724862760345325327026c/5fad7ec263dd798562a31a7e_apache%20spark%20ecosystem%20intro%20smaller.png</sub>
+*Figure: High‑level Apache Spark ecosystem across clouds.*<br>
+*Source: https://www.datamechanics.co/files/5e724862760345325327026c/5fad7ec263dd798562a31a7e_apache%20spark%20ecosystem%20intro%20smaller.png*
 
 **Tags**: apache-spark, pyspark, data-engineering, distributed-computing, big-data, performance-optimization, cost-optimization, production, multi-cloud
 
