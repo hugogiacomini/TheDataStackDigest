@@ -10,8 +10,8 @@ This series is for seasoned data engineers running Spark in the real world. It t
 
 ---
 
-## Part 1: Spark Architecture & Core Concepts for Production Systems ⚙️
-**Scope**: Deep dive into Spark's distributed computing model, cluster managers, and execution fundamentals. Cover driver-executor architecture, memory management, and when Spark makes sense vs alternatives like cloud data warehouses. Focus on architectural decisions that impact cost and reliability in production environments.
+## [Part 1: Spark Architecture & Core Concepts for Production Systems ⚙️](./02%29%20Spark%20Architecture%20%26%20Core%20Concepts%20for%20Production%20Systems.md)
+**Scope**: Deep dive into Spark's distributed computing model, cluster managers, and execution fundamentals. Cover driver–executor architecture, memory management, and when Spark makes sense vs alternatives like cloud data warehouses. Focus on architectural decisions that impact cost and reliability in production environments.
 
 ## Part 2: Advanced DataFrame Operations & Query Optimization 📊  
 **Scope**: Master complex transformations, window functions, and join strategies with focus on Catalyst optimizer internals. Explore predicate pushdown, columnar storage benefits, bucketing, and partitioning strategies for large-scale data transformation workloads that minimize shuffle operations and query costs.
