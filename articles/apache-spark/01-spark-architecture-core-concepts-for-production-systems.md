@@ -828,10 +828,10 @@ The combination of solid architectural foundations (Part 1) with advanced optimi
 ## What to Read Next 📖
 
 1. **[Part 2: Advanced DataFrame Operations & Query Optimization](./02-advanced-dataframe-operations-query-optimization.md)** - Master complex transformations and Catalyst optimizer
-2. **(WIP)[Spark Performance Tuning Cookbook](./03-spark-performance-tuning-cookbook.md)** - Practical recipes for common optimization scenarios  
-3. **(WIP)[Building Data Pipelines with Apache Airflow](../apache-airflow/01-building-data-pipelines-with-apache-airflow.md)** - Orchestration patterns for production Spark jobs  
-4. **(WIP)[Delta Lake Guide](../delta-lake/01-delta-lake-guide.md)** - Modern data lake architecture with Spark integration  
-5. **(WIP)[Monitoring Distributed Systems](../observability/01-monitoring-distributed-systems.md)** - Observability patterns for data engineering platforms
+2. *(WIP)[Spark Performance Tuning Cookbook](./03-spark-performance-tuning-cookbook.md)* - Practical recipes for common optimization scenarios  
+3. *(WIP)[Building Data Pipelines with Apache Airflow](../apache-airflow/01-building-data-pipelines-with-apache-airflow.md)* - Orchestration patterns for production Spark jobs  
+4. *(WIP)[Delta Lake Guide](../delta-lake/01-delta-lake-guide.md)* - Modern data lake architecture with Spark integration  
+5. *(WIP)[Monitoring Distributed Systems](../observability/01-monitoring-distributed-systems.md)* - Observability patterns for data engineering platforms
 
 ---
 
