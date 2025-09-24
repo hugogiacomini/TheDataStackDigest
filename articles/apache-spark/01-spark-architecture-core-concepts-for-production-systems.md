@@ -12,11 +12,11 @@
 
 ## TL;DR 📋
 
-• Master Spark's driver-executor architecture and understand when distributed processing adds value vs overhead
-• Choose the right cluster manager (YARN, Kubernetes, Standalone) based on your infrastructure and cost constraints  
-• Implement memory management and resource allocation strategies that prevent OOM errors and optimize costs
-• Design partitioning strategies that minimize shuffles and maximize parallelism for your specific workloads
-• Establish monitoring and observability patterns that catch performance issues before they impact production
+- Master Spark's driver-executor architecture and understand when distributed processing adds value vs overhead
+- Choose the right cluster manager (YARN, Kubernetes, Standalone) based on your infrastructure and cost constraints  
+- Implement memory management and resource allocation strategies that prevent OOM errors and optimize costs
+- Design partitioning strategies that minimize shuffles and maximize parallelism for your specific workloads
+- Establish monitoring and observability patterns that catch performance issues before they impact production
 
 ---
 
@@ -34,12 +34,12 @@
 
 ## Learning Objectives 🎯
 
-• Understand Spark's architecture trade-offs and when to choose it over alternatives like cloud data warehouses
-• Design resource allocation strategies that balance performance and cost for your specific workloads  
-• Implement partitioning and data organization patterns that minimize expensive shuffle operations
-• Configure monitoring and alerting for production Spark applications
-• Choose the optimal cluster manager and deployment pattern for your infrastructure constraints
-• Apply memory management techniques that prevent common production failures
+- Understand Spark's architecture trade-offs and when to choose it over alternatives like cloud data warehouses
+- Design resource allocation strategies that balance performance and cost for your specific workloads  
+- Implement partitioning and data organization patterns that minimize expensive shuffle operations
+- Configure monitoring and alerting for production Spark applications
+- Choose the optimal cluster manager and deployment pattern for your infrastructure constraints
+- Apply memory management techniques that prevent common production failures
 
 ---
 
