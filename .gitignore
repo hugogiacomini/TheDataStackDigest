@@ -70,10 +70,10 @@ site/
 .directory
 *~
 
-# Ignore the Apache Spark prompt file
-Apache\ Spark/prompt-apache-spark.txt
-Apache\ Spark/99-apache-spark-linkedin-post.md
-Apache\ Spark/03) Advanced DataFrame Operations & Query Optimization.md
-Apache\ Spark/04) Apache Spark Memory Management & Performance Tuning at Scale.md
-Apache\ Spark/05) Production Deployment Patterns & Multi-Cloud Strategies.md
-Apache\ Spark/06) Apache Spark Production Operations - Monitoring Security and Enterprise Deployment.md
+# Ensure these Apache Spark files are ignored (anchored to repo root)
+/articles/apache-spark/02-advanced-dataframe-operations-query-optimization.md
+/articles/apache-spark/03-apache-spark-memory-management-performance-tuning-scale.md
+/articles/apache-spark/04-production-deployment-patterns-and-multi-cloud-strategies.md
+/articles/apache-spark/05-apache-spark-production-operations-monitoring-security-and-enterprise-deployment.md
+/articles/apache-spark/prompt-apache-spark.txt
+/articles/apache-spark/99-apache-spark-linkedin-post.md
