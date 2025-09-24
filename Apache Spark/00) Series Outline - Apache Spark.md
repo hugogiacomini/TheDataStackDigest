@@ -14,16 +14,16 @@ This series is for seasoned data engineers running Spark in the real world. It t
 ## [Part 1: Spark Architecture & Core Concepts for Production Systems ⚙️](./02%29%20Spark%20Architecture%20%26%20Core%20Concepts%20for%20Production%20Systems.md)
 **Scope**: Deep dive into Spark's distributed computing model, cluster managers, and execution fundamentals. Cover driver–executor architecture, memory management, and when Spark makes sense vs alternatives like cloud data warehouses. Focus on architectural decisions that impact cost and reliability in production environments.
 
-## Part 2: Advanced DataFrame Operations & Query Optimization 📊  
+## (*Comming soon*) Part 2: Advanced DataFrame Operations & Query Optimization 📊  
 **Scope**: Master complex transformations, window functions, and join strategies with focus on Catalyst optimizer internals. Explore predicate pushdown, columnar storage benefits, bucketing, and partitioning strategies for large-scale data transformation workloads that minimize shuffle operations and query costs.
 
-## Part 3: Memory Management & Performance Tuning at Scale 🔧
+## (*Comming soon*) Part 3: Memory Management & Performance Tuning at Scale 🔧
 **Scope**: Comprehensive guide to Spark's unified memory model, garbage collection tuning, and resource allocation strategies. Deep dive into serialization, caching strategies, broadcast variables, and monitoring tools for bottleneck identification and cost-performance optimization.
 
-## Part 4: Production Deployment Patterns & Multi-Cloud Strategies ☁️
+## (*Comming soon*) Part 4: Production Deployment Patterns & Multi-Cloud Strategies ☁️
 **Scope**: Compare EMR, Dataproc, Databricks, and Kubernetes deployment options across AWS, GCP, and Azure. Cover auto-scaling, spot instances, infrastructure-as-code, CI/CD patterns, and cost optimization strategies with real-world trade-off analysis and decision frameworks.
 
-## Part 5: Advanced Features & Enterprise Integration 🏢
+## (*Comming soon*) Part 5: Advanced Features & Enterprise Integration 🏢
 **Scope**: Explore Structured Streaming, Delta Lake integration, and data governance patterns for enterprise environments. Cover security, compliance, multi-tenancy, testing strategies, observability, and integration patterns with modern data stacks including dbt, Airflow, and cloud data warehouses.
 
 That’s the game plan—practical, no fluff. Got a gnarly Spark edge case? Send it over and it may make the cut. First post drops soon; bring a profiler, caffeine, and an eye on shuffle. See you in Part 1.
