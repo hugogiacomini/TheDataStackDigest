@@ -69,6 +69,7 @@ site/
 # OS generated files
 .directory
 *~
+
 # Ignore the Apache Spark prompt file
 Apache\ Spark/prompt-apache-spark.txt
 Apache\ Spark/99-apache-spark-linkedin-post.md
