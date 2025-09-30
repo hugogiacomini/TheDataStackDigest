@@ -16,7 +16,8 @@
 
 **Target Audience**: Senior data engineers and analytics engineers building complex transformation pipelines that process 100GB+ datasets with strict SLA requirements.
 
-**Prerequisites**: 
+**Prerequisites**:
+
 - Completed Part 1 or equivalent Spark architecture knowledge
 - Strong SQL experience with complex joins and window functions
 - Understanding of distributed computing concepts (partitioning, shuffling)
@@ -85,8 +86,6 @@ flowchart TD
 ```
 *Caption: Catalyst optimizer transformations that reduce query execution costs*
 *Alt: Flowchart showing how Catalyst optimizer applies various optimizations to reduce shuffle operations and improve performance*
-
-[Export this Mermaid to PNG and insert here]
 
 ---
 
