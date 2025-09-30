@@ -85,7 +85,6 @@ flowchart TD
     J --> K
 ```
 *Caption: Catalyst optimizer transformations that reduce query execution costs*
-*Alt: Flowchart showing how Catalyst optimizer applies various optimizations to reduce shuffle operations and improve performance*
 
 ---
 
@@ -189,10 +188,8 @@ flowchart TD
     G --> K[Criteria: Pre-bucketed tables<br/>Frequent joins]
     H --> L[Criteria: Default fallback<br/>One-time operations]
 ```
-*Caption: Decision tree for choosing optimal join strategies based on data characteristics*
-*Alt: Flowchart showing how to select join algorithms based on table size, sorting, and partitioning*
 
-[Export this Mermaid to PNG and insert here]
+*Caption: Decision tree for choosing optimal join strategies based on data characteristics*
 
 ### Broadcast Join Optimization 📡
 
