@@ -71,7 +71,6 @@ site/
 *~
 
 # Ensure these Apache Spark files are ignored (anchored to repo root)
-/articles/apache-spark/02-advanced-dataframe-operations-query-optimization.md
 /articles/apache-spark/03-apache-spark-memory-management-performance-tuning-scale.md
 /articles/apache-spark/04-production-deployment-patterns-and-multi-cloud-strategies.md
 /articles/apache-spark/05-apache-spark-production-operations-monitoring-security-and-enterprise-deployment.md
