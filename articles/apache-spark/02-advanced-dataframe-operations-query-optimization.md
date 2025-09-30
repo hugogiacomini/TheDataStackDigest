@@ -2,11 +2,6 @@
 
 ## Master Complex Transformations and Catalyst Optimizer for Production Performance
 
-**Cover Image Suggestion**: Split-screen showing a complex query plan diagram on left and performance metrics dashboard on right
-**Tags**: apache-spark, pyspark, query-optimization, catalyst-optimizer, dataframe-operations, performance-tuning, sql-optimization, data-engineering
-
----
-
 ## TL;DR 📋
 
 - Master advanced DataFrame transformations including complex joins, window functions, and custom aggregations that scale to production workloads
