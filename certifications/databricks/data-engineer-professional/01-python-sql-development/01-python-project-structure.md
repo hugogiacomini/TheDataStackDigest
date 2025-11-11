@@ -127,28 +127,32 @@ if __name__ == "__main__":
 
 ## Mock Questions
 
-1.  **What is the primary purpose of the `databricks.yml` file in a Databricks Asset Bundle?**
-    a.  To define the business logic of the application.
-    b.  To define the bundle's name, artifacts, resources, and targets.
-    c.  To define the unit tests for the project.
+1. **What is the primary purpose of the `databricks.yml` file in a Databricks Asset Bundle?**
+
+    a.  To define the business logic of the application.  
+    b.  To define the bundle's name, artifacts, resources, and targets.  
+    c.  To define the unit tests for the project.  
     d.  To define the project's dependencies.
 
-2.  **Which of the following is a best practice for managing Databricks Asset Bundles?**
-    a.  Storing secrets directly in the `databricks.yml` file.
-    b.  Using a single bundle for all projects in your organization.
-    c.  Integrating bundles with CI/CD pipelines for automated testing and deployment.
+2. **Which of the following is a best practice for managing Databricks Asset Bundles?**
+
+    a.  Storing secrets directly in the `databricks.yml` file.  
+    b.  Using a single bundle for all projects in your organization.  
+    c.  Integrating bundles with CI/CD pipelines for automated testing and deployment.  
     d.  Manually deploying bundles to production environments.
 
-3.  **What is a common gotcha when working with Databricks Asset Bundles?**
-    a.  Using the latest version of the Databricks CLI.
-    b.  Incorrectly configured authentication.
-    c.  Using version control for your bundle files.
+3. **What is a common gotcha when working with Databricks Asset Bundles?**
+
+    a.  Using the latest version of the Databricks CLI.  
+    b.  Incorrectly configured authentication.  
+    c.  Using version control for your bundle files.  
     d.  Enabling workspace files in your Databricks workspace.
 
 **Answers:**
-1.  b
-2.  c
-3.  b
+
+1. b
+2. c
+3. b
 
 ## References
 
