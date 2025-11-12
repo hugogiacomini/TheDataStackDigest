@@ -21,7 +21,10 @@ import dlt
 from pyspark.sql.functions import *
 
 @dlt.table(
-  comment="Raw data from JSON source"
+  name="raw_data",
+  comment="Raw data from JSON source",
+  table_properties={"quality": "bronze"},
+  partition_cols=["id"]
 )
 def raw_data():
   return (
@@ -78,28 +81,31 @@ WHERE timestamp IS NOT NULL;
 
 ## Mock Questions
 
-1.  **What is the primary benefit of the declarative nature of Lakeflow Declarative Pipelines?**
-    a.  It allows you to write more complex code.
-    b.  It simplifies pipeline development by allowing you to define the end state of your data, while the framework handles the implementation details.
-    c.  It requires you to manually manage dependencies between your datasets.
-    d.  It only supports batch processing.
+1. **What is the primary benefit of the declarative nature of Lakeflow Declarative Pipelines?**
 
-2.  **How does Lakeflow handle data quality?**
-    a.  It automatically cleans all data.
-    b.  It ignores data quality issues.
-    c.  It allows you to define expectations and specify how to handle records that violate them.
-    d.  It sends an email to the data owner for every data quality issue.
+    a.  It allows you to write more complex code.  
+    b.  It simplifies pipeline development by allowing you to define the end state of your data, while the framework handles the implementation details.  
+    c.  It requires you to manually manage dependencies between your datasets.  
+    d.  It only supports batch processing.  
 
-3.  **What is the recommended way to ingest files from cloud storage in a Lakeflow pipeline?**
-    a.  Use the `spark.read.format("json").load()` command.
-    b.  Use Autoloader (`cloud_files`).
-    c.  Write a custom Python script to list and read the files.
-    d.  Manually trigger the pipeline for each new file.
+2. **How does Lakeflow handle data quality?**
+
+    a.  It automatically cleans all data.  
+    b.  It ignores data quality issues.  
+    c.  It allows you to define expectations and specify how to handle records that violate them.  
+    d.  It sends an email to the data owner for every data quality issue.  
+
+3. **What is the recommended way to ingest files from cloud storage in a Lakeflow pipeline?**
+
+    a.  Use the `spark.read.format("json").load()` command.  
+    b.  Use Autoloader (`cloud_files`).  
+    c.  Write a custom Python script to list and read the files.  
+    d.  Manually trigger the pipeline for each new file.  
 
 **Answers:**
-1.  b
-2.  c
-3.  b
+1. b
+2. c
+3. b
 
 ## References
 

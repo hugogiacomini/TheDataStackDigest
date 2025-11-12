@@ -24,7 +24,7 @@ Libraries can be installed from various sources:
 
 ### Installing Notebook-Scoped Libraries
 
-The recommended way to install notebook-scoped Python libraries is using the `%pip` magic command.
+The recommended way to install notebook-scoped Python libraries is using the `%pip` magic command. The `%pip` command ensures that the libraries are installed in the notebook's isolated environment, as well as installing them in the executors nodes. If you use `%sh pip` directly, the libraries will only be installed on the driver node and not on the executors.
 
 ```python
 %pip install pandas
@@ -46,10 +46,10 @@ To install from a `requirements.txt` file:
 
 Compute-scoped libraries are typically installed through the Databricks UI:
 
-1.  Navigate to the **Compute** page and select your cluster.
-2.  Click the **Libraries** tab.
-3.  Click **Install New**.
-4.  Select the library source (e.g., PyPI) and follow the instructions.
+1. Navigate to the **Compute** page and select your cluster.
+2. Click the **Libraries** tab.
+3. Click **Install New**.
+4. Select the library source (e.g., PyPI) and follow the instructions.
 
 ## Best Practices
 
@@ -67,28 +67,32 @@ Compute-scoped libraries are typically installed through the Databricks UI:
 
 ## Mock Questions
 
-1.  **What is the recommended way to install a Python library for a single notebook session?**
-    a.  Install it as a compute-scoped library.
-    b.  Use the `%pip` magic command.
-    c.  Store the library in the DBFS root.
-    d.  Email the library to your administrator.
+1. **What is the recommended way to install a Python library for a single notebook session?**
 
-2.  **Which of the following is a key benefit of using notebook-scoped libraries?**
-    a.  They are automatically available to all notebooks on the cluster.
-    b.  They persist across all notebook sessions.
-    c.  They provide an isolated environment for a specific notebook, preventing conflicts.
-    d.  They can be used to install JAR files.
+    a.  Install it as a compute-scoped library.  
+    b.  Use the `%pip` magic command.  
+    c.  Store the library in the DBFS root.  
+    d.  Email the library to your administrator.  
 
-3.  **Why is storing libraries in the DBFS root deprecated?**
-    a.  It is slower than other methods.
-    b.  It has a smaller storage capacity.
-    c.  It poses a security risk as any user can modify the files.
-    d.  It only supports Python libraries.
+2. **Which of the following is a key benefit of using notebook-scoped libraries?**
+
+    a.  They are automatically available to all notebooks on the cluster.  
+    b.  They persist across all notebook sessions.  
+    c.  They provide an isolated environment for a specific notebook, preventing conflicts.  
+    d.  They can be used to install JAR files.  
+
+3. **Why is storing libraries in the DBFS root deprecated?**
+
+    a.  It is slower than other methods.  
+    b.  It has a smaller storage capacity.  
+    c.  It poses a security risk as any user can modify the files.  
+    d.  It only supports Python libraries.  
 
 **Answers:**
-1.  b
-2.  c
-3.  c
+
+1. b
+2. c
+3. c
 
 ## References
 

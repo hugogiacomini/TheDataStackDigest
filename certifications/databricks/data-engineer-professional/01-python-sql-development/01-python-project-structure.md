@@ -35,37 +35,173 @@ A typical Databricks Asset Bundle project structure for a Python project might l
 
 This is the main configuration file for the bundle. It defines the bundle's name, artifacts, resources, and targets.
 
+### Advanced example `databricks.yml`
+
 ```yaml
 bundle:
   name: my-project
+  description: Example advanced Databricks Asset Bundle with jobs, pipelines, permissions, and targets.
+
+variables:
+  env:
+    description: Deployment environment
+    default: dev
+  schema_name:
+    description: Unity Catalog schema (per target override)
+    default: my_project_dev
+  catalog:
+    description: Unity Catalog catalog
+    default: main
 
 artifacts:
-  - path: src
+  wheel:
+    type: wheel
+    path: .
+    build: python -m build --wheel
+    python: "3.11"
 
 resources:
+  clusters:
+    adhoc_cluster:
+      name: my-project-adhoc
+      spark_version: 15.3.x-scala2.12
+      node_type_id: Standard_DS3_v2
+      autoscale:
+        min_workers: 1
+        max_workers: 4
+      spark_conf:
+        spark.sql.shuffle.partitions: "200"
+      custom_tags:
+        project: ${bundle.name}
+        env: ${var.env}
+
   jobs:
-    my_job:
-      name: My Job
+    etl_job:
+      name: ${bundle.name}-etl-${var.env}
+      tags:
+        project: ${bundle.name}
+        env: ${var.env}
+      schedule:
+        quartz_cron_expression: "0 0 * * * ?"   # hourly
+        timezone_id: UTC
+        pause_status: UNPAUSED
+      email_notifications:
+        on_failure:
+          - platform-data@company.com
+      timeout_seconds: 7200
+      max_concurrent_runs: 1
       tasks:
-        - task_key: my_task
+        - task_key: ingest
+          job_cluster_key: small_job_cluster
           python_wheel_task:
-            package_name: my-project
-            entry_point: main
+            package_name: my_project
+            entry_point: ingest
+            parameters:
+              - "--env"
+              - "${var.env}"
+              - "--time"
+              - "{{workflow.time}}"
+          libraries:
+            - whl: ${artifacts.wheel.path}/dist/*.whl
+          environment_variables:
+            ENV: ${var.env}
+            SCHEMA: ${var.schema_name}
+        - task_key: transform
+          depends_on:
+            - task_key: ingest
+          job_cluster_key: small_job_cluster
+          python_wheel_task:
+            package_name: my_project
+            entry_point: transform
+          libraries:
+            - whl: ${artifacts.wheel.path}/dist/*.whl
+        - task_key: quality_checks
+          depends_on:
+            - task_key: transform
+          job_cluster_key: small_job_cluster
+          python_wheel_task:
+            package_name: my_project
+            entry_point: quality
+          timeout_seconds: 900
+        - task_key: publish_metrics
+          depends_on:
+            - task_key: quality_checks
+          python_wheel_task:
+            package_name: my_project
+            entry_point: publish
+          existing_cluster_id: ${resources.clusters.adhoc_cluster.id}
+      job_clusters:
+        - job_cluster_key: small_job_cluster
+          new_cluster:
+            spark_version: 15.3.x-scala2.12
+            node_type_id: Standard_DS3_v2
+            autoscale:
+              min_workers: 2
+              max_workers: 6
+            spark_env_vars:
+              PYSPARK_PYTHON: /databricks/python3/bin/python
+            custom_tags:
+              job: etl
+              env: ${var.env}
+      permissions:
+        - level: CAN_MANAGE
+          group_name: data-engineers
+        - level: CAN_VIEW
+          group_name: data-analysts
 
   pipelines:
-    my_pipeline:
-      name: My Pipeline
-      target: my-project
+    dlt_pipeline:
+      name: ${bundle.name}-dlt-${var.env}
+      catalog: ${var.catalog}
+      target: ${var.schema_name}
+      channel: CURRENT
+      development: ${var.env != "prod"}
+      photon: true
+      continuous: false
       libraries:
         - notebook:
-            path: "../src/main.py"
+            path: ./src/dlt/bronze_notebook
+        - notebook:
+            path: ./src/dlt/silver_notebook
+        - whl: ${artifacts.wheel.path}/dist/*.whl
+      configuration:
+        bundle.name: ${bundle.name}
+        bundle.env: ${var.env}
+      permissions:
+        - level: CAN_MANAGE
+          group_name: data-engineers
+        - level: CAN_VIEW
+          group_name: data-analysts
+
+  registered_models:
+    metrics_model:
+      name: ${bundle.name}_metrics_${var.env}
+      permissions:
+        - level: CAN_MANAGE
+          group_name: ml-engineers
+        - level: CAN_READ
+          group_name: data-analysts
 
 targets:
   dev:
     mode: development
     default: true
+    workspace:
+      root_path: /Workspace/Users/dev@databricks.com/${bundle.name}
+    variables:
+      schema_name: my_project_dev
+    run_as:
+      user_name: dev@databricks.com
+
   prod:
     mode: production
+    workspace:
+      root_path: /Workspace/Users/prod@databricks.com/${bundle.name}
+    variables:
+      env: prod
+      schema_name: my_project_prod
+    run_as:
+      service_principal_name: spn-prod-my-project
 ```
 
 ### `src/main.py`

@@ -17,18 +17,19 @@ Autoloader is a feature in Databricks that allows you to incrementally and effic
 ### Using Autoloader with Structured Streaming
 
 ```python
-# Set up the stream
+# Set up the stream using Autoloader
 stream_df = (
-    spark.readStream.format("cloudFiles")
-    .option("cloudFiles.format", "json")
-    .option("cloudFiles.schemaLocation", "/path/to/schema/location")
+    spark.readStream.format("cloudFiles") # cloudFiles is the Autoloader source
+    .option("cloudFiles.format", "json") # Specify the file format
+    .option("cloudFiles.schemaLocation", "/path/to/schema/location") # Specify the schema location for schema inference and evolution
+    # .option("cloudFiles.schema", custom_schema.json())  # Provide schema as JSON string (optionally)
     .load("/path/to/source/data")
 )
 
 # Write the stream to a Delta table
 query = (
     stream_df.writeStream.format("delta")
-    .option("checkpointLocation", "/path/to/checkpoint/location")
+    .option("checkpointLocation", "/path/to/checkpoint/location") # Specify the checkpoint location for exactly-once guarantees
     .start("/path/to/target/table")
 )
 ```
@@ -62,28 +63,31 @@ def raw_data():
 
 ## Mock Questions
 
-1.  **What is the primary function of the `cloudFiles.schemaLocation` option in Autoloader?**
-    a.  To specify the location of the source data.
-    b.  To specify the location of the target table.
-    c.  To enable schema inference and evolution by storing the schema information.
-    d.  To specify the location of the checkpoint file.
+1. **What is the primary function of the `cloudFiles.schemaLocation` option in Autoloader?**
 
-2.  **Which of the following is a key benefit of Autoloader over the traditional file source in Structured Streaming?**
-    a.  It only supports batch processing.
-    b.  It is less scalable.
-    c.  It can automatically detect and handle schema changes.
-    d.  It requires you to manually manage file discovery.
+    a.  To specify the location of the source data.  
+    b.  To specify the location of the target table.  
+    c.  To enable schema inference and evolution by storing the schema information.  
+    d.  To specify the location of the checkpoint file.  
 
-3.  **What are the two file detection modes supported by Autoloader?**
-    a.  Directory listing and file notification.
-    b.  Manual and automatic.
-    c.  Batch and streaming.
-    d.  Full and incremental.
+2. **Which of the following is a key benefit of Autoloader over the traditional file source in Structured Streaming?**
+
+    a.  It only supports batch processing.  
+    b.  It is less scalable.  
+    c.  It can automatically detect and handle schema changes.  
+    d.  It requires you to manually manage file discovery.  
+
+3. **What are the two file detection modes supported by Autoloader?**
+
+    a.  Directory listing and file notification.  
+    b.  Manual and automatic.  
+    c.  Batch and streaming.  
+    d.  Full and incremental.  
 
 **Answers:**
-1.  c
-2.  c
-3.  a
+1. c
+2. c
+3. a
 
 ## References
 

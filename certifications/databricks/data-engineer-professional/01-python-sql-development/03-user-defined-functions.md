@@ -70,28 +70,32 @@ df.withColumn("upper_text", uppercase_pandas_udf(df.text)).show()
 
 ## Mock Questions
 
-1.  **What is the main advantage of using Pandas UDFs over scalar Python UDFs?**
-    a.  They are easier to write.
-    b.  They can be used in SQL queries.
-    c.  They offer significantly better performance due to vectorized execution.
-    d.  They can handle null values automatically.
+1. **What is the main advantage of using Pandas UDFs over scalar Python UDFs?**
 
-2.  **When should you consider writing a UDF?**
-    a.  For any data transformation.
-    b.  When the desired functionality is not available in Spark's built-in functions.
-    c.  To make your code more complex.
-    d.  When you want to slow down your data processing.
+    a.  They are easier to write.  
+    b.  They can be used in SQL queries.  
+    c.  They offer significantly better performance due to vectorized execution.  
+    d.  They can handle null values automatically.  
 
-3.  **What is a potential issue with using scalar Python UDFs?**
-    a.  They are too fast.
-    b.  They can only be used with Pandas DataFrames.
-    c.  They can introduce performance bottlenecks due to serialization/deserialization overhead.
-    d.  They cannot be registered for use in SQL queries.
+2. **When should you consider writing a UDF?**
+
+    a.  For any data transformation.  
+    b.  When the desired functionality is not available in Spark's built-in functions.  
+    c.  To make your code more complex.  
+    d.  When you want to slow down your data processing.  
+
+3. **What is a potential issue with using scalar Python UDFs?**
+
+    a.  They are too fast.  
+    b.  They can only be used with Pandas DataFrames.  
+    c.  They can introduce performance bottlenecks due to serialization/deserialization overhead.  
+    d.  They cannot be registered for use in SQL queries.  
 
 **Answers:**
-1.  c
-2.  b
-3.  c
+
+1. c
+2. b
+3. c
 
 ## References
 
