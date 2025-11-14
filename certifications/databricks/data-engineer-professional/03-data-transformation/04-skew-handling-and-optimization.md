@@ -27,8 +27,13 @@ Diagnose and mitigate data skew in joins/aggregations; optimize wide transformat
 ### Enable AQE Skew Join Optimization (Python)
 
 ```python
+# Enable Adaptive Query Execution
 spark.conf.set("spark.sql.adaptive.enabled", "true")
+
+# Enable AQE skew join optimization to split large partitions
 spark.conf.set("spark.sql.adaptive.skewJoin.enabled", "true")
+
+# Set threshold for partition size to be considered skewed (default 256MB)
 spark.conf.set("spark.sql.adaptive.skewJoin.skewedPartitionThresholdInBytes", "256MB")
 
 # AQE will split large partitions during join automatically
