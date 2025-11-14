@@ -81,3 +81,8 @@ df.select("my_struct.my_field").show()
 ## References
 
 [1] [Data types | Databricks on AWS](https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-datatypes)
+
+---
+
+Previous: [Higher-Order Functions](./02-higher-order-functions.md)  
+Next: [Skew Handling and Optimization](./04-skew-handling-and-optimization.md)

@@ -93,3 +93,7 @@ def my_append_only_pipeline():
 ## References
 
 [1] [Data is processed on Lakeflow Declarative Pipelines with flows](https://docs.databricks.com/aws/en/ldp/flows)
+
+---
+
+Next: [Schema Evolution and Expectations](./04-schema-evolution-and-expectations.md)

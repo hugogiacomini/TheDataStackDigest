@@ -76,3 +76,7 @@ Photon is enabled by default on Databricks SQL warehouses and can be enabled on 
 ## References
 
 [1] [Optimization recommendations on Databricks](https://docs.databricks.com/aws/en/optimizations/)
+
+---
+
+Next: [Photon Engine and AQE Deep Dive](./02-photon-and-aqe-deep-dive.md)

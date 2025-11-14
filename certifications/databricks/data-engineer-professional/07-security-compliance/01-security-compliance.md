@@ -74,3 +74,7 @@ databricks secrets put --scope my_scope --key my_key --string-value my_secret_va
 [1] [Security and compliance | Databricks on AWS](https://docs.databricks.com/aws/en/security/)
 [2] [What is Unity Catalog?](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/)
 [3] [Databricks Trust & Compliance: Ensuring Security & Privacy](https://www.databricks.com/trust/compliance)
+
+---
+
+Next: [Row and Column Masking, Auditing](./02-row-column-masking-auditing.md)

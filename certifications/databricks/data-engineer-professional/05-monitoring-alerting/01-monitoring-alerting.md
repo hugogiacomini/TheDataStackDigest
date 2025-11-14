@@ -82,3 +82,7 @@ ORDER BY start_time DESC;
 [1] [Monitoring and observability for Lakeflow Jobs](https://docs.databricks.com/aws/en/jobs/monitor)
 [2] [Monitor job costs & performance with system tables](https://docs.databricks.com/aws/en/admin/system-tables/jobs-cost)
 [3] [Databricks SQL alerts](https://docs.databricks.com/aws/en/sql/user/alerts/)
+
+---
+
+Next: [System Tables, Event Logs, and Lineage](./02-system-tables-event-log-lineage.md)

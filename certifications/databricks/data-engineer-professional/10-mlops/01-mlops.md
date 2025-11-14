@@ -86,3 +86,7 @@ fs.create_table(
 [1] [MLOps workflows on Databricks](https://docs.databricks.com/aws/en/machine-learning/mlops/mlops-workflow)
 [2] [Managed MLflow](https://www.databricks.com/product/managed-mlflow)
 [3] [Feature Store](https://www.databricks.com/product/feature-store)
+
+---
+
+Next: [Feature Store and Model Registry](./02-feature-store-and-model-registry.md)

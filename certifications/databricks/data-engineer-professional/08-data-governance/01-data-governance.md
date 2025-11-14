@@ -67,3 +67,7 @@ You can use the search bar in the Databricks UI to search for data assets across
 ## References
 
 [1] [Data governance with Databricks](https://docs.databricks.com/aws/en/data-governance/)
+
+---
+
+Next: [Lineage, Tagging, and Retention Policies](./02-lineage-tagging-retention.md)
