@@ -2,7 +2,7 @@
 
 ## Overview
 
-Diagnose and mitigate data skew in joins/aggregations; optimize wide transformations with salting, bucketing, and AQE.
+Diagnose and mitigate data skew in joins/aggregations; optimize wide transformations with salting, bucketing, and Adaptive Query Execution (AQE).
 
 ## Prerequisites
 
