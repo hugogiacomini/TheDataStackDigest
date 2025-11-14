@@ -31,10 +31,10 @@ ORDER BY start_time DESC;
 
 ### Creating a Databricks SQL Alert
 
-1.  Create a query that returns a value you want to monitor.
-2.  Click the "Create Alert" button.
-3.  Configure the alert to trigger when the value meets a certain condition (e.g., is greater than a threshold).
-4.  Configure the alert to send a notification to an email address or other destination.
+1. Create a query that returns a value you want to monitor.
+2. Click the "Create Alert" button.
+3. Configure the alert to trigger when the value meets a certain condition (e.g., is greater than a threshold).
+4. Configure the alert to send a notification to an email address or other destination.
 
 ## Best Practices
 
@@ -50,28 +50,32 @@ ORDER BY start_time DESC;
 
 ## Mock Questions
 
-1.  **Which Databricks feature would you use to get a historical view of your job runs?**
-    a.  The Jobs UI
-    b.  The Spark UI
-    c.  System tables
-    d.  Databricks SQL alerts
+1. **Which Databricks feature would you use to get a historical view of your job runs?**
 
-2.  **What is the primary purpose of Databricks SQL alerts?**
-    a.  To run Spark jobs.
-    b.  To periodically run a query, evaluate a condition, and send a notification if the condition is met.
-    c.  To view the history of all queries run in your workspace.
-    d.  To create Delta tables.
+    a. The Jobs UI  
+    b. The Spark UI  
+    c. System tables  
+    d. Databricks SQL alerts
 
-3.  **What is a potential issue with system tables?**
-    a.  They are not available in all regions.
-    b.  They are difficult to query.
-    c.  They are in public preview and the schema may change.
-    d.  They do not contain historical data.
+2. **What is the primary purpose of Databricks SQL alerts?**
 
-**Answers:**
-1.  c
-2.  b
-3.  c
+    a. To run Spark jobs.  
+    b. To periodically run a query, evaluate a condition, and send a notification if the condition is met.  
+    c. To view the history of all queries run in your workspace.  
+    d. To create Delta tables.
+
+3. **What is a potential issue with system tables?**
+
+    a. They are not available in all regions.  
+    b. They are difficult to query.  
+    c. They are in public preview and the schema may change.  
+    d. They do not contain historical data.
+
+## Answers
+
+1. c
+2. b
+3. c
 
 ## References
 

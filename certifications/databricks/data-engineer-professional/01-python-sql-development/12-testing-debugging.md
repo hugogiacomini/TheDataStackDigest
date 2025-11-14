@@ -63,28 +63,32 @@ When a Spark job is running, you can access the Spark UI by clicking the "View" 
 
 ## Mock Questions
 
-1.  **What is the primary purpose of unit testing?**
-    a.  To test the entire application.
-    b.  To test individual units of code, such as functions, in isolation.
-    c.  To test the performance of the application.
-    d.  To test the user interface.
+1. **What is the primary purpose of unit testing?**
 
-2.  **Which tool would you use to step through your Python code line by line in a Databricks notebook?**
-    a.  The Spark UI
-    b.  The interactive debugger
-    c.  `pytest`
-    d.  The Jobs UI
+    a.  To test the entire application.  
+    b.  To test individual units of code, such as functions, in isolation.  
+    c.  To test the performance of the application.  
+    d.  To test the user interface.  
 
-3.  **What is a key use of the Spark UI?**
-    a.  Writing Python code.
-    b.  Running unit tests.
-    c.  Analyzing and debugging the performance of Spark jobs.
-    d.  Creating Delta tables.
+2. **Which tool would you use to step through your Python code line by line in a Databricks notebook?**
 
-**Answers:**
-1.  b
-2.  b
-3.  c
+    a.  The Spark UI  
+    b.  The interactive debugger  
+    c.  `pytest`  
+    d.  The Jobs UI  
+
+3. **What is a key use of the Spark UI?**
+
+    a.  Writing Python code.  
+    b.  Running unit tests.  
+    c.  Analyzing and debugging the performance of Spark jobs.  
+    d.  Creating Delta tables.  
+
+## Answers
+
+1. b
+2. b
+3. c
 
 ## References
 

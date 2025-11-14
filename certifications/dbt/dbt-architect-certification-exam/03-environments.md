@@ -301,6 +301,7 @@ models:
 ### 1. Separate Development and Production Credentials
 
 **Development:**
+
 ```markdown
 Credentials: Individual OAuth accounts
 Purpose: Personal development and testing
@@ -309,6 +310,7 @@ Permissions: Read all, write to dev schemas only
 ```
 
 **Production:**
+
 ```markdown
 Credentials: Service account with key pair
 Purpose: Automated production runs

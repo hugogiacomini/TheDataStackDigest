@@ -89,28 +89,32 @@ This allows you to run a task for each item in a list. For example, you could ha
 
 ## Mock Questions
 
-1.  **Which control flow operator would you use to run a task multiple times with different inputs?**
-    a.  `If/else condition`
-    b.  `For each` loop
-    c.  Task Dependencies
-    d.  `Run if`
+1. **Which control flow operator would you use to run a task multiple times with different inputs?**
 
-2.  **What is the primary purpose of using control flow operators in Databricks Jobs?**
-    a.  To write Python code.
-    b.  To orchestrate the execution of tasks in a workflow.
-    c.  To create Delta tables.
-    d.  To manage cluster permissions.
+    a.  `If/else condition`  
+    b.  `For each` loop  
+    c.  Task Dependencies  
+    d.  `Run if`  
 
-3.  **How can you handle task failures in a Databricks Job workflow?**
-    a.  By using a `For each` loop.
-    b.  By using conditional execution (`If/else condition`) to run a cleanup task if a previous task fails.
-    c.  By increasing the cluster size.
-    d.  By deleting the failed task.
+2. **What is the primary purpose of using control flow operators in Databricks Jobs?**
 
-**Answers:**
-1.  b
-2.  b
-3.  b
+    a.  To write Python code.  
+    b.  To orchestrate the execution of tasks in a workflow.  
+    c.  To create Delta tables.  
+    d.  To manage cluster permissions.  
+
+3. **How can you handle task failures in a Databricks Job workflow?**
+
+    a.  By using a `For each` loop.  
+    b.  By using conditional execution (`If/else condition`) to run a cleanup task if a previous task fails.  
+    c.  By increasing the cluster size.  
+    d.  By deleting the failed task.  
+
+## Answers
+
+1. b
+2. b
+3. b
 
 ## References
 

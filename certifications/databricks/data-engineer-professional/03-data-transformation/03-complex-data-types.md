@@ -51,28 +51,32 @@ df.select("my_struct.my_field").show()
 
 ## Mock Questions
 
-1.  **Which function would you use to convert an array of elements into multiple rows?**
-    a.  `transform()`
-    b.  `explode()`
-    c.  `filter()`
-    d.  `select()`
+1. **Which function would you use to convert an array of elements into multiple rows?**
 
-2.  **How do you access a field within a `STRUCT` type column?**
-    a.  Using bracket notation (e.g., `my_struct["my_field"]`)
-    b.  Using dot notation (e.g., `my_struct.my_field`)
-    c.  Using the `getField()` function
-    d.  You cannot access individual fields within a struct.
+    a. `transform()`  
+    b. `explode()`  
+    c. `filter()`  
+    d. `select()`
 
-3.  **What is a key characteristic of a `MAP` data type?**
-    a.  It is an ordered sequence of elements.
-    b.  It is a collection of key-value pairs.
-    c.  It can only store string values.
-    d.  It cannot be used in a DataFrame.
+2. **How do you access a field within a `STRUCT` type column?**
 
-**Answers:**
-1.  b
-2.  b
-3.  b
+    a. Using bracket notation (e.g., `my_struct["my_field"]`)  
+    b. Using dot notation (e.g., `my_struct.my_field`)  
+    c. Using the `getField()` function  
+    d. You cannot access individual fields within a struct.
+
+3. **What is a key characteristic of a `MAP` data type?**
+
+    a. It is an ordered sequence of elements.  
+    b. It is a collection of key-value pairs.  
+    c. It can only store string values.  
+    d. It cannot be used in a DataFrame.
+
+## Answers
+
+1. b
+2. b
+3. b
 
 ## References
 

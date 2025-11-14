@@ -54,28 +54,32 @@ fs.create_table(
 
 ## Mock Questions
 
-1.  **Which Databricks tool is an open-source platform for managing the end-to-end machine learning lifecycle?**
-    a.  Feature Store
-    b.  Model Serving
-    c.  MLflow
-    d.  Unity Catalog
+1. **Which Databricks tool is an open-source platform for managing the end-to-end machine learning lifecycle?**
 
-2.  **What is the primary purpose of the Feature Store?**
-    a.  To deploy models as REST APIs.
-    b.  To track experiments.
-    c.  To provide a centralized repository for storing, sharing, and discovering features.
-    d.  To manage the lifecycle of models.
+    a. Feature Store  
+    b. Model Serving  
+    c. MLflow  
+    d. Unity Catalog
 
-3.  **What is a key benefit of using the Model Registry?**
-    a.  It allows you to version your models and manage their lifecycle.
-    b.  It automatically trains your models.
-    c.  It provides a centralized repository for storing your data.
-    d.  It is the only way to deploy models in Databricks.
+2. **What is the primary purpose of the Feature Store?**
 
-**Answers:**
-1.  c
-2.  c
-3.  a
+    a. To deploy models as REST APIs.  
+    b. To track experiments.  
+    c. To provide a centralized repository for storing, sharing, and discovering features.  
+    d. To manage the lifecycle of models.
+
+3. **What is a key benefit of using the Model Registry?**
+
+    a. It allows you to version your models and manage their lifecycle.  
+    b. It automatically trains your models.  
+    c. It provides a centralized repository for storing your data.  
+    d. It is the only way to deploy models in Databricks.
+
+## Answers
+
+1. c
+2. c
+3. a
 
 ## References
 

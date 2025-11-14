@@ -1,4 +1,3 @@
-_md", text=
 # Ingestion Sources
 
 ## Concept Definition
@@ -65,30 +64,33 @@ df = (
 
 ## Mock Questions
 
-1.  **What is the recommended method for ingesting files from cloud object storage in Databricks?**
-    a.  Using the JDBC connector.
-    b.  Using Autoloader.
-    c.  Writing a custom Python script.
-    d.  Manually uploading the files.
+1. **What is the recommended method for ingesting files from cloud object storage in Databricks?**
 
-2.  **How should you securely store credentials for connecting to a database?**
-    a.  Hardcode them in your notebook.
-    b.  Store them in a plain text file.
-    c.  Use Databricks secrets.
-    d.  Email them to your colleagues.
+    a.  Using the JDBC connector.  
+    b.  Using Autoloader.  
+    c.  Writing a custom Python script.  
+    d.  Manually uploading the files.  
 
-3.  **Which Databricks feature simplifies the ingestion of data from SaaS applications like Salesforce?**
-    a.  Autoloader
-    b.  The JDBC connector
-    c.  Lakeflow Connect
-    d.  Structured Streaming
+2. **How should you securely store credentials for connecting to a database?**
 
-**Answers:**
-1.  b
-2.  c
-3.  c
+    a.  Hardcode them in your notebook.  
+    b.  Store them in a plain text file.  
+    c.  Use Databricks secrets.  
+    d.  Email them to your colleagues.  
+
+3. **Which Databricks feature simplifies the ingestion of data from SaaS applications like Salesforce?**
+
+    a.  Autoloader  
+    b.  The JDBC connector  
+    c.  Lakeflow Connect  
+    d.  Structured Streaming  
+
+## Answers
+
+1. b
+2. c
+3. c
 
 ## References
 
 [1] [Connect to data sources and external services | Databricks on AWS](https://docs.databricks.com/aws/en/connect/)
-

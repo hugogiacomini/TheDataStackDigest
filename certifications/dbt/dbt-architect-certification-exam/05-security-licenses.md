@@ -615,7 +615,6 @@ def provision_contractor(email, project_id, duration_days=90):
     
     return user
 ```
-```markdown
 
 ### Scenario 4: Implementing Compliance Controls
 
@@ -685,7 +684,6 @@ def generate_access_audit_report():
     
     return report
 ```
-```markdown
 
 ## Sample Exam Questions
 
@@ -701,6 +699,7 @@ D) Job Admin
 **Answer:** C) Read-Only
 
 **Explanation:**
+
 - Read-Only provides documentation access without code modification rights
 - Developer would give unnecessary IDE access
 - Admin would give too many permissions
@@ -718,6 +717,7 @@ D) Share the account admin token
 **Answer:** B) Create a service account token with job trigger permissions
 
 **Explanation:**
+
 - Service tokens are designed for automation
 - Personal tokens break when user leaves
 - SSO is for interactive login, not API access
@@ -735,6 +735,7 @@ D) 10 Developer licenses, no licenses for analysts
 **Answer:** B) 10 Developer licenses, 50 Read-Only licenses
 
 **Explanation:**
+
 - Developers need Developer licenses for IDE access
 - Analysts only viewing docs can use Read-Only licenses
 - This optimizes license costs
@@ -752,6 +753,7 @@ D) The user's account is deleted
 **Answer:** B) The user's dbt Cloud permissions are updated at next login
 
 **Explanation:**
+
 - SSO group mappings sync permissions at login
 - Not immediate; requires re-authentication
 - Permissions not manual when SSO is configured
@@ -769,6 +771,7 @@ D) View jobs only
 **Answer:** A) View jobs, Run jobs, View run history
 
 **Explanation:**
+
 - View jobs allows seeing job definitions
 - Run jobs allows executing them
 - View run history allows checking results
@@ -788,6 +791,7 @@ D) Disable account temporarily for 30 days
 **Answer:** B) Remove from IdP → Verify dbt Cloud access revoked → Transfer ownership of artifacts
 
 **Explanation:**
+
 - Start with IdP removal (central auth source)
 - SSO integration automatically restricts dbt Cloud access
 - Transfer ownership before complete removal

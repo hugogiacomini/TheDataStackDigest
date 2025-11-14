@@ -91,7 +91,7 @@ df.withColumn("upper_text", uppercase_pandas_udf(df.text)).show()
     c.  They can introduce performance bottlenecks due to serialization/deserialization overhead.  
     d.  They cannot be registered for use in SQL queries.  
 
-**Answers:**
+## Answers
 
 1. c
 2. b

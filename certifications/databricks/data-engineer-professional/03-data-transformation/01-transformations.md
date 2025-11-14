@@ -55,28 +55,32 @@ df_agg = df.groupBy("category").agg(sum("value").alias("total_value"))
 
 ## Mock Questions
 
-1.  **What does it mean that transformations in Spark are "lazy"?**
-    a.  They are slow to execute.
-    b.  They are not executed until an action is called.
-    c.  They are easy to write.
-    d.  They can only be used with small datasets.
+1. **What does it mean that transformations in Spark are "lazy"?**
 
-2.  **Which function would you use to add a new column to a DataFrame?**
-    a.  `select()`
-    b.  `filter()`
-    c.  `withColumn()`
-    d.  `groupBy()`
+    a. They are slow to execute.  
+    b. They are not executed until an action is called.  
+    c. They are easy to write.  
+    d. They can only be used with small datasets.
 
-3.  **What is a common technique to mitigate data skew during a join operation?**
-    a.  Using a smaller cluster.
-    b.  Salting the join key.
-    c.  Using the `union()` function.
-    d.  Ignoring the skewed data.
+2. **Which function would you use to add a new column to a DataFrame?**
 
-**Answers:**
-1.  b
-2.  c
-3.  b
+    a. `select()`  
+    b. `filter()`  
+    c. `withColumn()`  
+    d. `groupBy()`
+
+3. **What is a common technique to mitigate data skew during a join operation?**
+
+    a. Using a smaller cluster.  
+    b. Salting the join key.  
+    c. Using the `union()` function.  
+    d. Ignoring the skewed data.
+
+## Answers
+
+1. b
+2. c
+3. b
 
 ## References
 

@@ -69,28 +69,32 @@ curl -X POST -H "Authorization: Bearer <your-token>" \
 
 ## Mock Questions
 
-1.  **What is a key advantage of using job clusters for scheduled jobs?**
-    a.  They are always running and ready to execute jobs.
-    b.  They are more expensive than all-purpose clusters.
-    c.  They are created for the duration of the job and terminated upon completion, which can be more cost-effective.
-    d.  They can only run notebook tasks.
+1. **What is a key advantage of using job clusters for scheduled jobs?**
 
-2.  **Which of the following is a recommended best practice for automating jobs in Databricks?**
-    a.  Running jobs as your personal user account.
-    b.  Storing job definitions on your local machine.
-    c.  Using a service principal to run jobs.
-    d.  Using all-purpose clusters for all jobs.
+    a.  They are always running and ready to execute jobs.  
+    b.  They are more expensive than all-purpose clusters.  
+    c.  They are created for the duration of the job and terminated upon completion, which can be more cost-effective.  
+    d.  They can only run notebook tasks.  
 
-3.  **What is a common way to define a Databricks job for automation?**
-    a.  In a Word document.
-    b.  In a JSON file.
-    c.  In an email.
-    d.  In a text message.
+2. **Which of the following is a recommended best practice for automating jobs in Databricks?**
 
-**Answers:**
-1.  c
-2.  c
-3.  b
+    a.  Running jobs as your personal user account.  
+    b.  Storing job definitions on your local machine.  
+    c.  Using a service principal to run jobs.  
+    d.  Using all-purpose clusters for all jobs.  
+
+3. **What is a common way to define a Databricks job for automation?**
+
+    a.  In a Word document.  
+    b.  In a JSON file.  
+    c.  In an email.  
+    d.  In a text message.  
+
+## Answers
+
+1. c
+2. c
+3. b
 
 ## References
 

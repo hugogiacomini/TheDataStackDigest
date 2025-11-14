@@ -48,28 +48,32 @@ FROM my_table;
 
 ## Mock Questions
 
-1.  **Which higher-order function would you use to apply a transformation to each element in an array?**
-    a.  `FILTER`
-    b.  `EXISTS`
-    c.  `TRANSFORM`
-    d.  `AGGREGATE`
+1. **Which higher-order function would you use to apply a transformation to each element in an array?**
 
-2.  **What is a key advantage of using higher-order functions over UDFs for array manipulation?**
-    a.  They are easier to write.
-    b.  They are more flexible.
-    c.  They generally offer better performance.
-    d.  They can be used with any data type.
+    a. `FILTER`  
+    b. `EXISTS`  
+    c. `TRANSFORM`  
+    d. `AGGREGATE`
 
-3.  **What is the purpose of the `FILTER` higher-order function?**
-    a.  To transform each element in an array.
-    b.  To filter an array based on a boolean function.
-    c.  To check if a value exists in an array.
-    d.  To aggregate the elements of an array.
+2. **What is a key advantage of using higher-order functions over UDFs for array manipulation?**
 
-**Answers:**
-1.  c
-2.  c
-3.  b
+    a. They are easier to write.  
+    b. They are more flexible.  
+    c. They generally offer better performance.  
+    d. They can be used with any data type.
+
+3. **What is the purpose of the `FILTER` higher-order function?**
+
+    a. To transform each element in an array.  
+    b. To filter an array based on a boolean function.  
+    c. To check if a value exists in an array.  
+    d. To aggregate the elements of an array.
+
+## Answers
+
+1. c
+2. c
+3. b
 
 ## References
 

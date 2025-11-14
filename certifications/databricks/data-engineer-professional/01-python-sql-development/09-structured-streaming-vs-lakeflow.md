@@ -77,28 +77,32 @@ def my_pipeline():
 
 ## Mock Questions
 
-1.  **What is a key advantage of using Lakeflow Declarative Pipelines over Structured Streaming?**
-    a.  It provides a lower-level API for more control.
-    b.  It requires manual orchestration of tasks.
-    c.  It simplifies pipeline development with a declarative API and automatic orchestration.
-    d.  It does not support schema evolution.
+1. **What is a key advantage of using Lakeflow Declarative Pipelines over Structured Streaming?**
 
-2.  **In which scenario would you be more likely to use Structured Streaming instead of Lakeflow Declarative Pipelines?**
-    a.  A standard ETL pipeline.
-    b.  A custom streaming application with complex, low-level requirements.
-    c.  A pipeline that requires automatic schema evolution.
-    d.  A pipeline that requires built-in data quality checks.
+    a.  It provides a lower-level API for more control.  
+    b.  It requires manual orchestration of tasks.  
+    c.  It simplifies pipeline development with a declarative API and automatic orchestration.  
+    d.  It does not support schema evolution.  
 
-3.  **What is a key responsibility you have when using Structured Streaming that is handled automatically in Lakeflow Declarative Pipelines?**
-    a.  Writing SQL queries.
-    b.  Managing the checkpoint location.
-    c.  Reading data from a source.
-    d.  Writing data to a sink.
+2. **In which scenario would you be more likely to use Structured Streaming instead of Lakeflow Declarative Pipelines?**
 
-**Answers:**
-1.  c
-2.  b
-3.  b
+    a.  A standard ETL pipeline.  
+    b.  A custom streaming application with complex, low-level requirements.  
+    c.  A pipeline that requires automatic schema evolution.  
+    d.  A pipeline that requires built-in data quality checks.  
+
+3. **What is a key responsibility you have when using Structured Streaming that is handled automatically in Lakeflow Declarative Pipelines?**
+
+    a.  Writing SQL queries.  
+    b.  Managing the checkpoint location.  
+    c.  Reading data from a source.  
+    d.  Writing data to a sink.  
+
+## Answers
+
+1. c
+2. b
+3. b
 
 ## References
 

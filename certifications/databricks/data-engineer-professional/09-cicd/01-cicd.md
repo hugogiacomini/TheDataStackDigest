@@ -52,28 +52,32 @@ jobs:
 
 ## Mock Questions
 
-1.  **What is the recommended way to package and deploy Databricks assets?**
-    a.  Manually upload them to the workspace.
-    b.  Use the Databricks CLI to deploy individual files.
-    c.  Use Databricks Asset Bundles.
-    d.  Email them to your colleagues.
+1. **What is the recommended way to package and deploy Databricks assets?**
 
-2.  **What is a key benefit of using a Git-based workflow for managing your Databricks assets?**
-    a.  It is the only way to deploy assets to Databricks.
-    b.  It allows you to track changes, collaborate with others, and integrate with CI/CD pipelines.
-    c.  It is the most expensive way to manage your assets.
-    d.  It is the least secure way to manage your assets.
+    a. Manually upload them to the workspace.  
+    b. Use the Databricks CLI to deploy individual files.  
+    c. Use Databricks Asset Bundles.  
+    d. Email them to your colleagues.
 
-3.  **What is a common CI/CD platform that can be used with Databricks?**
-    a.  The Spark UI
-    b.  The Databricks UI
-    c.  GitHub Actions
-    d.  DBFS
+2. **What is a key benefit of using a Git-based workflow for managing your Databricks assets?**
 
-**Answers:**
-1.  c
-2.  b
-3.  c
+    a. It is the only way to deploy assets to Databricks.  
+    b. It allows you to track changes, collaborate with others, and integrate with CI/CD pipelines.  
+    c. It is the most expensive way to manage your assets.  
+    d. It is the least secure way to manage your assets.
+
+3. **What is a common CI/CD platform that can be used with Databricks?**
+
+    a. The Spark UI  
+    b. The Databricks UI  
+    c. GitHub Actions  
+    d. DBFS
+
+## Answers
+
+1. c
+2. b
+3. c
 
 ## References
 

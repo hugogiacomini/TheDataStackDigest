@@ -37,28 +37,32 @@ You can use the search bar in the Databricks UI to search for data assets across
 
 ## Mock Questions
 
-1.  **Which Databricks feature is the foundation of data governance in the Databricks Lakehouse?**
-    a.  DBFS
-    b.  Unity Catalog
-    c.  The Spark UI
-    d.  Databricks SQL
+1. **Which Databricks feature is the foundation of data governance in the Databricks Lakehouse?**
 
-2.  **What is data lineage?**
-    a.  The process of deleting old data.
-    b.  The ability to track the lineage of your data, from source to destination.
-    c.  The process of granting access to data.
-    d.  The process of creating new tables.
+    a. DBFS  
+    b. Unity Catalog  
+    c. The Spark UI  
+    d. Databricks SQL
 
-3.  **What is a key benefit of using tags in Unity Catalog?**
-    a.  To encrypt your data.
-    b.  To organize your data assets and make them easier to discover.
-    c.  To delete your data.
-    d.  To grant access to your data.
+2. **What is data lineage?**
 
-**Answers:**
-1.  b
-2.  b
-3.  b
+    a. The process of deleting old data.  
+    b. The ability to track the lineage of your data, from source to destination.  
+    c. The process of granting access to data.  
+    d. The process of creating new tables.
+
+3. **What is a key benefit of using tags in Unity Catalog?**
+
+    a. To encrypt your data.  
+    b. To organize your data assets and make them easier to discover.  
+    c. To delete your data.  
+    d. To grant access to your data.
+
+## Answers
+
+1. b
+2. b
+3. b
 
 ## References
 

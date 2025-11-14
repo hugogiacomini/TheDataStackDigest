@@ -71,28 +71,32 @@ You can configure a task to not retry on failure by setting `max_retries` to 0.
 
 ## Mock Questions
 
-1.  **When would you choose to use a high-memory node type for a job cluster?**
-    a.  When the job is running too fast.
-    b.  When the job is failing with out-of-memory errors.
-    c.  When the job is not using enough CPU.
-    d.  When the job is running on a small amount of data.
+1. **When would you choose to use a high-memory node type for a job cluster?**
 
-2.  **What is the primary benefit of using a job cluster for a production workload?**
-    a.  It is shared with other users and jobs.
-    b.  It provides a consistent and isolated environment for the job.
-    c.  It is more expensive than an all-purpose cluster.
-    d.  It cannot be configured with specific node types.
+    a.  When the job is running too fast.  
+    b.  When the job is failing with out-of-memory errors.  
+    c.  When the job is not using enough CPU.  
+    d.  When the job is running on a small amount of data.  
 
-3.  **How can you prevent a task from being retried on failure?**
-    a.  Set `max_retries` to a large number.
-    b.  Set `max_retries` to 0.
-    c.  Delete the task.
-    d.  Contact Databricks support.
+2. **What is the primary benefit of using a job cluster for a production workload?**
 
-**Answers:**
-1.  b
-2.  b
-3.  b
+    a.  It is shared with other users and jobs.  
+    b.  It provides a consistent and isolated environment for the job.  
+    c.  It is more expensive than an all-purpose cluster.  
+    d.  It cannot be configured with specific node types.  
+
+3. **How can you prevent a task from being retried on failure?**
+
+    a.  Set `max_retries` to a large number.  
+    b.  Set `max_retries` to 0.  
+    c.  Delete the task.  
+    d.  Contact Databricks support.  
+
+## Answers
+
+1. b
+2. b
+3. b
 
 ## References
 

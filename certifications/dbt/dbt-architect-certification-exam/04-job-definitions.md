@@ -597,7 +597,7 @@ Problem:
 
 **Challenge:** Deploy dbt changes to production without causing downtime or stale data.
 
-**Solution: Blue-Green Deployment Pattern**
+#### Solution: Blue-Green Deployment Pattern
 
 ```markdown
 Setup:
@@ -638,7 +638,7 @@ Deployment Process:
 
 **Challenge:** Some models take hours to run, blocking other updates.
 
-**Solution: Separate Fast and Slow Jobs**
+#### Solution: Separate Fast and Slow Jobs
 
 ```markdown
 Job 1: Fast Models (Hourly)
@@ -706,7 +706,7 @@ APAC Production Job:
 
 **Challenge:** Full dbt runs are expensive; most models don't need hourly updates.
 
-**Solution: Tiered Update Strategy**
+#### Solution: Tiered Update Strategy
 
 ```markdown
 Tier 1: Real-time (Every 15 minutes)

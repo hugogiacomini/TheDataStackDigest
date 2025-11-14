@@ -52,28 +52,32 @@ df = spark.read.format("json").option("inferSchema", "true").load("/path/to/data
 
 ## Mock Questions
 
-1.  **What is the default and recommended data format for tables in Databricks?**
-    a.  Parquet
-    b.  CSV
-    c.  Delta Lake
-    d.  JSON
+1. **What is the default and recommended data format for tables in Databricks?**
 
-2.  **Why is it a best practice to specify the schema when reading data from formats like JSON and CSV?**
-    a.  To make the code more complex.
-    b.  To avoid the performance overhead of schema inference and ensure data type correctness.
-    c.  To slow down the data ingestion process.
-    d.  Because it is required by the Spark API.
+    a.  Parquet  
+    b.  CSV  
+    c.  Delta Lake  
+    d.  JSON  
 
-3.  **Which data format is best suited for storing large datasets for analytical querying?**
+2. **Why is it a best practice to specify the schema when reading data from formats like JSON and CSV?**
+
+    a.  To make the code more complex.  
+    b.  To avoid the performance overhead of schema inference and ensure data type correctness.  
+    c.  To slow down the data ingestion process.  
+    d.  Because it is required by the Spark API.  
+
+3. **Which data format is best suited for storing large datasets for analytical querying?**
+
     a.  JSON
     b.  CSV
     c.  Parquet
     d.  Text
 
-**Answers:**
-1.  c
-2.  b
-3.  c
+## Answers
+
+1. c
+2. b
+3. c
 
 ## References
 

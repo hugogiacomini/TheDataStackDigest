@@ -42,28 +42,32 @@ databricks secrets put --scope my_scope --key my_key --string-value my_secret_va
 
 ## Mock Questions
 
-1.  **Which Databricks feature provides a unified governance solution for data and AI assets?**
-    a.  DBFS
-    b.  Unity Catalog
-    c.  The Spark UI
-    d.  Databricks SQL
+1. **Which Databricks feature provides a unified governance solution for data and AI assets?**
 
-2.  **What is the recommended way to store credentials for accessing external data sources?**
-    a.  Hardcode them in your notebooks.
-    b.  Store them in a plain text file.
-    c.  Use Databricks secrets.
-    d.  Email them to your colleagues.
+    a. DBFS  
+    b. Unity Catalog  
+    c. The Spark UI  
+    d. Databricks SQL
 
-3.  **What is the principle of least privilege?**
-    a.  Granting all users and service principals the same level of access.
-    b.  Granting users and service principals only the permissions they need to perform their jobs.
-    c.  Granting no permissions to any users or service principals.
-    d.  Granting all permissions to all users and service principals.
+2. **What is the recommended way to store credentials for accessing external data sources?**
 
-**Answers:**
-1.  b
-2.  c
-3.  b
+    a. Hardcode them in your notebooks.  
+    b. Store them in a plain text file.  
+    c. Use Databricks secrets.  
+    d. Email them to your colleagues.
+
+3. **What is the principle of least privilege?**
+
+    a. Granting all users and service principals the same level of access.  
+    b. Granting users and service principals only the permissions they need to perform their jobs.  
+    c. Granting no permissions to any users or service principals.  
+    d. Granting all permissions to all users and service principals.
+
+## Answers
+
+1. b
+2. c
+3. b
 
 ## References
 

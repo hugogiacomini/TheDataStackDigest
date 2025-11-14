@@ -70,7 +70,7 @@ dbt Cloud supports multiple data warehouse platforms:
 
 #### Step 1: Navigate to Connection Settings
 
-```
+```shell
 Account Settings → Projects → [Your Project] → Connection
 ```
 
@@ -124,7 +124,7 @@ ALTER USER dbt_cloud_service_account
 
 #### BigQuery Authorized Networks Example
 
-```
+```shell
 1. Go to BigQuery → Settings → Authorized Networks
 2. Add dbt Cloud IP ranges:
    - 52.45.144.63/32
@@ -159,7 +159,7 @@ Client Secret: [Your Google OAuth Client Secret]
 
 #### Step 3: Developer Authentication Flow
 
-```
+```shell
 1. Developer opens dbt Cloud IDE
 2. Clicks "Connect to BigQuery"
 3. Redirected to Google OAuth consent screen
@@ -172,7 +172,7 @@ Client Secret: [Your Google OAuth Client Secret]
 
 #### In the UI
 
-```
+```shell
 1. Navigate to Project Settings → Connection
 2. Scroll to "Test Connection" section
 3. Click "Test Connection"
@@ -383,7 +383,7 @@ production:
 
 **Problem**: Continuing to work without properly testing connections
 
-```
+```shell
 Connection test failed: Network timeout
 [Developer proceeds anyway, thinking it might work later]
 ```

@@ -73,7 +73,7 @@ Email Configuration:
 
 **Email Template:**
 
-```
+```shell
 Subject: [dbt Cloud] Daily Production Run - Failed
 
 Job: Daily Production Run
@@ -96,7 +96,7 @@ https://cloud.getdbt.com/deploy/12345/projects/67890/runs/111213/
 
 ### Example 2: Webhook Configuration for Slack
 
-**Step 1: Create Slack Incoming Webhook**
+#### Step 1: Create Slack Incoming Webhook
 
 ```markdown
 In Slack:
@@ -106,7 +106,7 @@ In Slack:
 4. Copy webhook URL: https://hooks.slack.com/services/T00/B00/XXX
 ```
 
-**Step 2: Configure dbt Cloud Webhook**
+#### Step 2: Configure dbt Cloud Webhook
 
 ```markdown
 Navigate to: Job Settings → Webhooks
@@ -123,7 +123,7 @@ Add Webhook:
     Content-Type: application/json
 ```
 
-**Step 3: Transform Payload (Using Middleware Service)**
+#### Step 3: Transform Payload (Using Middleware Service)
 
 ```python
 # Lambda function or Cloud Function to transform dbt webhook to Slack format

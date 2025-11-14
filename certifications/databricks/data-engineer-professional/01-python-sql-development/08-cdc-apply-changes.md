@@ -59,28 +59,32 @@ STORED AS SCD TYPE 1;
 
 ## Mock Questions
 
-1.  **What is the purpose of the `sequence_by` clause in the `APPLY CHANGES` API?**
-    a.  To specify the primary key of the table.
-    b.  To ensure that changes are applied in the correct order.
-    c.  To define the SCD type.
-    d.  To filter the source data.
+1. **What is the purpose of the `sequence_by` clause in the `APPLY CHANGES` API?**
 
-2.  **Which of the following is a key benefit of the `APPLY CHANGES` API?**
-    a.  It can only be used with batch data.
-    b.  It simplifies CDC logic with a declarative syntax.
-    c.  It requires you to manually handle out-of-sequence data.
-    d.  It does not support SCD Type 2.
+    a.  To specify the primary key of the table.  
+    b.  To ensure that changes are applied in the correct order.  
+    c.  To define the SCD type.  
+    d.  To filter the source data.  
 
-3.  **What is the recommended way to handle CDC in Databricks as of the latest updates?**
-    a.  Using the `MERGE` statement.
-    b.  Using the `APPLY CHANGES` API.
-    c.  Using the `AUTO CDC` APIs.
-    d.  Writing a custom Python script.
+2. **Which of the following is a key benefit of the `APPLY CHANGES` API?**
 
-**Answers:**
-1.  b
-2.  b
-3.  c
+    a.  It can only be used with batch data.  
+    b.  It simplifies CDC logic with a declarative syntax.  
+    c.  It requires you to manually handle out-of-sequence data.  
+    d.  It does not support SCD Type 2.  
+
+3. **What is the recommended way to handle CDC in Databricks as of the latest updates?**
+
+    a.  Using the `MERGE` statement.  
+    b.  Using the `APPLY CHANGES` API.  
+    c.  Using the `AUTO CDC` APIs.  
+    d.  Writing a custom Python script.  
+
+## Answers
+
+1. b
+2. b
+3. c
 
 ## References
 

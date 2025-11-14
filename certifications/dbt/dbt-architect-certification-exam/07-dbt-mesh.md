@@ -68,7 +68,7 @@ Cross-project references consider environment types:
 
 **Organizational Structure:**
 
-```
+```shell
 Organization: Acme Corp
 ├── Project: core-data (foundational models)
 │   ├── Repository: github.com/acme/dbt-core-data
@@ -221,7 +221,7 @@ select * from aggregated
 
 ### Example 3: Setting Up Project Dependencies in dbt Cloud
 
-**Step 1: Create Upstream Project (core-data)**
+#### Step 1: Create Upstream Project (core-data)
 
 ```markdown
 dbt Cloud Console:
@@ -234,7 +234,7 @@ dbt Cloud Console:
    - Production (branch: main)
 ```
 
-**Step 2: Create Downstream Project (finance-analytics)**
+#### Step 2: Create Downstream Project (finance-analytics)
 
 ```markdown
 dbt Cloud Console:
@@ -249,7 +249,7 @@ dbt Cloud Console:
    - Save configuration
 ```
 
-**Step 3: Configure Environment-Level Dependencies**
+#### Step 3: Configure Environment-Level Dependencies
 
 ```markdown
 Environment Configuration (Finance Analytics → Production):
@@ -550,7 +550,7 @@ Step 4: Remove old version
 Example migration communication:
 ```
 
-# BREAKING CHANGE: dim_customers v2
+## BREAKING CHANGE: dim_customers v2
 
 ## What's changing?
 
@@ -580,12 +580,8 @@ select * from {{ ref('core_data', 'dim_customers') }}  -- defaults to v2
 Update your models to use v2 by June 30, 2024.
 Contact #data-platform with questions.
 
-```
-```markdown
-
 ### 6. Governance and Discovery
 
-```markdown
 Model Governance Framework:
 
 1. Naming Conventions
@@ -615,6 +611,7 @@ Model Governance Framework:
    - Regular "show and tell" sessions
 
 Example tags:
+
 ```yaml
 models:
   - name: dim_customers

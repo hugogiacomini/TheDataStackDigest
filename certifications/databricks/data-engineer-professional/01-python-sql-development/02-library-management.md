@@ -88,7 +88,7 @@ Compute-scoped libraries are typically installed through the Databricks UI:
     c.  It poses a security risk as any user can modify the files.  
     d.  It only supports Python libraries.  
 
-**Answers:**
+## Answers
 
 1. b
 2. c

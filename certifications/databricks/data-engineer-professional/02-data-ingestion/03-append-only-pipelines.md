@@ -63,28 +63,32 @@ def my_append_only_pipeline():
 
 ## Mock Questions
 
-1.  **What is the default output mode for a Structured Streaming query?**
-    a.  Append
-    b.  Complete
-    c.  Update
-    d.  There is no default output mode.
+1. **What is the default output mode for a Structured Streaming query?**
 
-2.  **In Lakeflow Declarative Pipelines, what is the default flow for a streaming table?**
-    a.  An append flow
-    b.  A merge flow
-    c.  A delete flow
-    d.  There is no default flow.
+    a.  Append  
+    b.  Complete  
+    c.  Update  
+    d.  There is no default output mode.  
 
-3.  **What is a potential issue with append-only pipelines?**
-    a.  They are too slow.
-    b.  They are too complex.
-    c.  They may not handle duplicate records correctly without a deduplication step.
-    d.  They cannot be used with streaming data.
+2. **In Lakeflow Declarative Pipelines, what is the default flow for a streaming table?**
 
-**Answers:**
-1.  a
-2.  a
-3.  c
+    a.  An append flow  
+    b.  A merge flow  
+    c.  A delete flow  
+    d.  There is no default flow.  
+
+3. **What is a potential issue with append-only pipelines?**
+
+    a.  They are too slow.  
+    b.  They are too complex.  
+    c.  They may not handle duplicate records correctly without a deduplication step.  
+    d.  They cannot be used with streaming data.  
+
+## Answers
+
+1. a
+2. a
+3. c
 
 ## References
 

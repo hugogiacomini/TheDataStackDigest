@@ -102,7 +102,8 @@ WHERE timestamp IS NOT NULL;
     c.  Write a custom Python script to list and read the files.  
     d.  Manually trigger the pipeline for each new file.  
 
-**Answers:**
+## Answers
+
 1. b
 2. c
 3. b

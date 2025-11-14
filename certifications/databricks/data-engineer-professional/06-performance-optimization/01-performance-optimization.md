@@ -46,28 +46,32 @@ Photon is enabled by default on Databricks SQL warehouses and can be enabled on 
 
 ## Mock Questions
 
-1.  **What is the primary purpose of the `OPTIMIZE` command in Delta Lake?**
-    a.  To delete old data.
-    b.  To compact small files into larger ones.
-    c.  To add new columns to a table.
-    d.  To create a new table.
+1. **What is the primary purpose of the `OPTIMIZE` command in Delta Lake?**
 
-2.  **What is the benefit of using `Z-ORDER`?**
-    a.  It sorts the data in a table.
-    b.  It colocates related information in the same set of files, which can improve query performance.
-    c.  It encrypts the data in a table.
-    d.  It compresses the data in a table.
+    a. To delete old data.  
+    b. To compact small files into larger ones.  
+    c. To add new columns to a table.  
+    d. To create a new table.
 
-3.  **What is the Photon engine?**
-    a.  A new data format.
-    b.  A high-performance, vectorized query engine.
-    c.  A tool for monitoring jobs.
-    d.  A library for machine learning.
+2. **What is the benefit of using `Z-ORDER`?**
 
-**Answers:**
-1.  b
-2.  b
-3.  b
+    a. It sorts the data in a table.  
+    b. It colocates related information in the same set of files, which can improve query performance.  
+    c. It encrypts the data in a table.  
+    d. It compresses the data in a table.
+
+3. **What is the Photon engine?**
+
+    a. A new data format.  
+    b. A high-performance, vectorized query engine.  
+    c. A tool for monitoring jobs.  
+    d. A library for machine learning.
+
+## Answers
+
+1. b
+2. b
+3. b
 
 ## References
 

@@ -84,7 +84,8 @@ def raw_data():
     c.  Batch and streaming.  
     d.  Full and incremental.  
 
-**Answers:**
+## Answers
+
 1. c
 2. c
 3. a

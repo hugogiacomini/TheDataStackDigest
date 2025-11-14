@@ -60,28 +60,32 @@ OPTIONS (
 
 ## Mock Questions
 
-1.  **Which Databricks feature would you use to share a live dataset with an external partner who is not on Databricks?**
-    a.  Lakehouse Federation
-    b.  Delta Sharing
-    c.  DBFS
-    d.  Unity Catalog
+1. **Which Databricks feature would you use to share a live dataset with an external partner who is not on Databricks?**
 
-2.  **What is the primary purpose of Lakehouse Federation?**
-    a.  To share data with external consumers.
-    b.  To query data in external data sources without moving it.
-    c.  To create copies of data in your Databricks workspace.
-    d.  To manage permissions on your data.
+    a. Lakehouse Federation  
+    b. Delta Sharing  
+    c. DBFS  
+    d. Unity Catalog
 
-3.  **What is a key benefit of Delta Sharing?**
-    a.  It requires you to copy data to a shared location.
-    b.  It is a proprietary protocol.
-    c.  It allows you to share live data without copying or moving it.
-    d.  It only works with other Databricks workspaces.
+2. **What is the primary purpose of Lakehouse Federation?**
 
-**Answers:**
-1.  b
-2.  b
-3.  c
+    a. To share data with external consumers.  
+    b. To query data in external data sources without moving it.  
+    c. To create copies of data in your Databricks workspace.  
+    d. To manage permissions on your data.
+
+3. **What is a key benefit of Delta Sharing?**
+
+    a. It requires you to copy data to a shared location.  
+    b. It is a proprietary protocol.  
+    c. It allows you to share live data without copying or moving it.  
+    d. It only works with other Databricks workspaces.
+
+## Answers
+
+1. b
+2. b
+3. c
 
 ## References
 

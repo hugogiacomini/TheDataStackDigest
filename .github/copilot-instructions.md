@@ -80,6 +80,7 @@ Additional rules:
 
 - Always specify a language for fenced code blocks:
   - `sql`, `yaml`, `python`, `bash`, `json`, `scala` (for Spark), `markdown` (only when needed)
+- When there is no specific language, use `shell`.
 - Prefer runnable, minimal examples; include environment notes (e.g., Python version, dbt version).
 - For Spark:
   - Provide both DataFrame and SQL examples when instructive.
@@ -98,6 +99,29 @@ Follow these rules to avoid common markdown issues:
   - Surround with blank lines (MD031) and include a language (MD040).
 - Do not use emphasis as a heading (MD036): prefer `### Subheading` over `**Subheading**`.
 - Keep a single H1 per document (MD025). Use H2+ for sections.
+- When creating questions with alternatives, make sure to format them clearly with two spaces after each option, and a blank line after the question.
+- Line endings and spacing:
+  - No trailing spaces at the end of lines (MD009).
+  - No multiple consecutive blank lines (MD012).
+  - Files should end with a single newline (MD047).
+- Links and references:
+  - Use descriptive link text, avoid "click here" or bare URLs (MD034).
+  - Reference-style links should be defined at the end of the document (MD052).
+- Lists formatting:
+  - Use consistent marker style within a list (MD004) - prefer `-` for unordered lists.
+  - Avoid mixing ordered and unordered list markers (MD005).
+  - Use proper indentation for nested lists (MD007) - 2 spaces per level.
+- Emphasis and strong formatting:
+  - Use consistent markers for emphasis: `*italic*` and `**bold**` (MD049, MD050).
+  - Avoid using emphasis for entire sentences unless necessary.
+- Table formatting:
+  - Tables should have headers (MD043).
+  - Table rows should have consistent column counts.
+  - Use proper table alignment with pipes `|`.
+- Heading structure:
+  - Use incremental heading levels, don't skip (MD001) - no H1 → H3 jumps.
+  - Avoid duplicate heading content in the same document (MD024).
+  - Headings should not end with punctuation (MD026).
 
 Quick example (good formatting):
 

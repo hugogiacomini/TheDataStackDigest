@@ -16,7 +16,7 @@ Databricks Asset Bundles (DABs) provide an Infrastructure-as-Code (IaC) approach
 
 A typical Databricks Asset Bundle project structure for a Python project might look like this:
 
-```
+```text
 .my-project/
 ├── databricks.yml
 ├── src/
@@ -284,7 +284,7 @@ if __name__ == "__main__":
     c.  Using version control for your bundle files.  
     d.  Enabling workspace files in your Databricks workspace.
 
-**Answers:**
+## Answers
 
 1. b
 2. c

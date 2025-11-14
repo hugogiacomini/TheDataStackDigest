@@ -119,7 +119,7 @@ In GitLab:
 4. Copy token (shown only once!)
 ```
 
-#### Step 2: Configure in dbt Cloud
+#### Step 2: Configure in dbt Cloud (GitLab)
 
 ```markdown
 Project Settings → Repository
@@ -158,7 +158,7 @@ In Azure DevOps:
 3. Copy token value
 ```
 
-#### Step 2: Configure in dbt Cloud
+#### Step 2: Configure in dbt Cloud (Azure DevOps)
 
 ```markdown
 Project Settings → Repository

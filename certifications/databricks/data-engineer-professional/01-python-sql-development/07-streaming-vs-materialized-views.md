@@ -5,7 +5,7 @@
 
 In Databricks, both **Streaming Tables** and **Materialized Views** are managed Delta Lake tables that are updated automatically as the data they depend on changes. However, they are designed for different use cases and have different characteristics. [1]
 
-- **Streaming Tables** are designed for append-only streaming workloads. They process data that has been added since the last pipeline update and are stateful.
+- **Streaming Tables** are designed for append-only streaming workloads. They process data that has been added since the last pipeline update and are stateful (maintains and remembers information from previous events).
 
 - **Materialized Views** are designed for batch workloads and are used to pre-compute results of complex queries. They are automatically and incrementally updated, but they are not designed for continuous, low-latency streaming.
 
@@ -51,14 +51,14 @@ def my_materialized_view():
 
 ## SQL Examples
 
-### Creating a Streaming Table
+### Creating a Streaming Table (SQL)
 
 ```sql
 CREATE STREAMING LIVE TABLE my_streaming_table
 AS SELECT * FROM cloud_files("/path/to/source/data", "json");
 ```
 
-### Creating a Materialized View
+### Creating a Materialized View (SQL)
 
 ```sql
 CREATE MATERIALIZED VIEW my_materialized_view
@@ -83,28 +83,32 @@ GROUP BY column_a;
 
 ## Mock Questions
 
-1.  **When would you choose to use a Streaming Table over a Materialized View?**
-    a.  When you need to pre-compute the results of a complex query.
-    b.  When you are ingesting data from an append-only streaming source and require low latency.
-    c.  When you are working with batch data that changes infrequently.
-    d.  When you need to perform complex aggregations.
+1. **When would you choose to use a Streaming Table over a Materialized View?**
 
-2.  **What is a key characteristic of a Materialized View?**
-    a.  It is designed for low-latency, continuous streaming.
-    b.  It is always recomputed from scratch.
-    c.  It is automatically and incrementally updated.
-    d.  It can only be defined in Python.
+    a.  When you need to pre-compute the results of a complex query.  
+    b.  When you are ingesting data from an append-only streaming source and require low latency.  
+    c.  When you are working with batch data that changes infrequently.  
+    d.  When you need to perform complex aggregations.  
 
-3.  **Which of the following is a recommended best practice?**
-    a.  Using Materialized Views for raw data ingestion.
-    b.  Using Streaming Tables for complex aggregations.
-    c.  Using a Streaming Table to ingest raw data and then creating Materialized Views on top of it.
-    d.  Refreshing Materialized Views every second.
+2. **What is a key characteristic of a Materialized View?**
 
-**Answers:**
-1.  b
-2.  c
-3.  c
+    a.  It is designed for low-latency, continuous streaming.  
+    b.  It is always recomputed from scratch.  
+    c.  It is automatically and incrementally updated.  
+    d.  It can only be defined in Python.  
+
+3. **Which of the following is a recommended best practice?**
+
+    a.  Using Materialized Views for raw data ingestion.  
+    b.  Using Streaming Tables for complex aggregations.  
+    c.  Using a Streaming Table to ingest raw data and then creating Materialized Views on top of it.  
+    d.  Refreshing Materialized Views every second.  
+
+## Answers
+
+1. b
+2. c
+3. c
 
 ## References
 
