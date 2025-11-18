@@ -131,5 +131,4 @@ jobs:
 
 ## References
 
-- Databricks Asset Bundles (DABs) documentation
-- Databricks CLI v0 Bundles commands
+- [Databricks Asset Bundles (DABs) documentation](https://docs.databricks.com/aws/en/dev-tools/bundles/)
