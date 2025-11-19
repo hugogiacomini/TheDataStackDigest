@@ -7,24 +7,28 @@ Thank you for your interest in contributing to TheDataStackDigest! This document
 We welcome several types of contributions:
 
 ### 📝 Articles & Tutorials
+
 - Technical deep-dives on Data Engineering topics
 - Step-by-step tutorials and how-to guides
 - Case studies and real-world experiences
 - Tool comparisons and evaluations
 
 ### 🔧 Code Examples
+
 - Sample implementations and code snippets
 - Configuration examples
 - Infrastructure as Code templates
 - Pipeline code samples
 
 ### 📚 Resources & References
+
 - Curated lists of useful tools and libraries
 - Links to external articles and documentation
 - Conference talks and presentations
 - Books and learning materials
 
 ### 🐛 Improvements
+
 - Fixing typos and grammatical errors
 - Updating outdated information
 - Improving formatting and readability
@@ -33,7 +37,9 @@ We welcome several types of contributions:
 ## 📁 Content Organization
 
 ### Directory Structure
+
 Each content category has its own directory:
+
 - `data-architecture/` - System design and architecture patterns
 - `data-engineering-tools/` - Tools, frameworks, and technologies
 - `data-pipelines/` - Pipeline design and implementation
@@ -43,11 +49,13 @@ Each content category has its own directory:
 - `career-skills/` - Career development and skills
 
 ### File Naming Convention
+
 - Use descriptive, lowercase filenames with hyphens: `apache-airflow-best-practices.md`
 - Include dates for time-sensitive content: `2024-01-data-engineering-trends.md`
 - Use clear, searchable names that reflect the content
 
 ### Content Structure
+
 Each article should follow this basic structure:
 
 ```markdown
@@ -81,12 +89,14 @@ Main content sections with clear headings
 ## ✅ Content Guidelines
 
 ### Quality Standards
+
 - **Accuracy**: Ensure technical information is correct and up-to-date
 - **Clarity**: Write in clear, accessible language
 - **Completeness**: Provide sufficient detail for readers to understand and apply concepts
 - **Relevance**: Focus on practical, applicable Data Engineering topics
 
 ### Style Guidelines
+
 - Use clear, descriptive headings and subheadings
 - Include code examples where relevant
 - Add diagrams or images to illustrate complex concepts
@@ -94,6 +104,7 @@ Main content sections with clear headings
 - Link to external resources and documentation
 
 ### Technical Requirements
+
 - Test any code examples before submitting
 - Include version information for tools and technologies
 - Provide complete configuration examples where applicable
@@ -102,27 +113,32 @@ Main content sections with clear headings
 ## 🚀 How to Contribute
 
 ### 1. Fork and Clone
+
 ```bash
 git clone https://github.com/your-username/TheDataStackDigest.git
 cd TheDataStackDigest
 ```
 
 ### 2. Create a Branch
+
 ```bash
 git checkout -b add-your-article-name
 ```
 
 ### 3. Add Your Content
+
 - Place your article in the appropriate category directory
 - Follow the naming conventions and content structure
 - Include any supporting files (images, code samples, etc.)
 
 ### 4. Test Your Changes
+
 - Review your markdown formatting
 - Check that all links work correctly
 - Ensure code examples are accurate
 
 ### 5. Submit a Pull Request
+
 - Provide a clear description of your contribution
 - Reference any related issues or discussions
 - Include a brief summary of the content added
@@ -165,18 +181,21 @@ Which category does this content belong to?
 Not sure what to contribute? Here are some ideas:
 
 ### Beginner-Friendly Topics
+
 - Introduction to Data Engineering concepts
 - Setting up development environments
 - Basic pipeline patterns
 - Tool installation and configuration guides
 
 ### Advanced Topics
+
 - Performance optimization techniques
 - Scalability patterns and architectures
 - Advanced tool configurations
 - Real-world problem-solving case studies
 
 ### Trending Areas
+
 - Modern data stack implementations
 - Cloud-native data engineering
 - DataOps and MLOps integration
@@ -193,6 +212,7 @@ Not sure what to contribute? Here are some ideas:
 ## 📞 Questions?
 
 If you have questions about contributing, please:
+
 - Open an issue for general questions
 - Comment on existing pull requests for specific feedback
 - Reach out to maintainers for guidance
