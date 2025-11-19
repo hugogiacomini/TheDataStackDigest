@@ -75,3 +75,7 @@ site/
 /articles/apache-spark/05-apache-spark-production-operations-monitoring-security-and-enterprise-deployment.md
 /articles/apache-spark/99*
 /articles/apache-spark/prompt*
+
+# Prompts
+/certifications/dbt/analytics-engineer-certification-exam/*prompt.md
+/certifications/dbt/dbt-architect-certification-exam/*prompt.md
